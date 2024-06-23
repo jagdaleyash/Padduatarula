@@ -1,0 +1,82 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    color: #ff66b2; /* Pink text color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 50px;
+    max-width: 90%;
+    width: 500px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #ff3399; /* Dark pink heading color */
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ff66b2;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px; /* Adjust as needed */
+}
+
+button {
+    background-color: #ff66b2; /* Pink button background */
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3399; /* Darker pink on hover */
+}
+
+/* Form layout adjustments for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padduu Baluuu</title>
+    <link rel="icon" href="pad.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gandhar can wait, tell me about you.</h1>
+        <form id="moodForm" action="mood.php" method="POST">
+            <label for="mood">How's your mood?</label>
+            <select id="mood" name="mood" required>
+                <option value="Happy">Happy</option>
+                <option value="Sad">Sad</option>
+                <option value="Angry">Angry</option>
+                <option value="Excited">Excited</option>
+                <option value="Anxious">Anxious</option>
+                <option value="Relaxed">Relaxed</option>
+            </select><br>
+            
+            <label for="happiness">How happy are you? (1-10)</label>
+            <input type="number" id="happiness" name="happiness" min="1" max="10" required><br>
+            
+            <label for="anger">How angry are you? (1-10)</label>
+            <input type="number" id="anger" name="anger" min="1" max="10" required><br>
+            
+            <label for="sadness">How sad are you? (1-10)</label>
+            <input type="number" id="sadness" name="sadness" min="1" max="10" required><br>
+            
+            <label for="description">Describe your day in less than 10 words:</label>
+            <input type="text" id="description" name="description" maxlength="10" required><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

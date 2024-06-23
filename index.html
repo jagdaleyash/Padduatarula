@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padduu Baluuu</title>
+    <link rel="icon" href="pad.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Work Log</h1>
+        <form id="workLogForm" action="log.php" method="POST">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br>
+            
+            <label for="inTime">In Time:</label>
+            <input type="time" id="inTime" name="in_time" required><br>
+            
+            <label for="outTime">Out Time:</label>
+            <input type="time" id="outTime" name="out_time" required><br>
+            
+            <label for="workLog">Work Log:</label>
+            <textarea id="workLog" name="work_log" required></textarea><br>
+            
+            <label for="activity">Activity:</label>
+            <input type="text" id="activity" name="activity" required><br>
+            
+            <label for="skill">Skill:</label>
+            <input type="text" id="skill" name="skill" required><br>
+            
+            <label for="level">Level:</label>
+            <select id="level" name="level" required>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Mastered">Mastered</option>
+            </select><br>
+            
+            <label for="nextDayPlan">Plan for Next Day:</label>
+            <textarea id="nextDayPlan" name="next_day_plan" required></textarea><br>
+            
+            <label for="nextWeekPlan">Plan for Next Week:</label>
+            <textarea id="nextWeekPlan" name="next_week_plan" required></textarea><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
